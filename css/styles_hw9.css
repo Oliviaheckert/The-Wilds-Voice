@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { 
+	line-height: 1.6;
+	padding: 0;
+    margin: 0;
+}
+
+p {
+	font-family: 'Merriweather', serif;
+	font-size: 20px;
+}
+
+
+
+/* Navigation */
+.navbar, .navbar-brand, .nav-link, .nav-link.active:focus, .navbar-nav .nav-link.active:hover {
+    background-color: #7a0103 !important; 
+    border-color: #7a0103; 
+    color: #FFFFFF !important; 
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-brand {
+    color: #FFFFFF; 
+}
+
+/* Hover State for Navigation Links */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    background-color: #580002 !important; 
+    color: #FFFFFF !important; 
+}
+
+
+/* About Page */
+.btn.btn-link {
+    color: #7a0103 !important; 
+	font-weight: bold;
+}
+
+.custom-container {
+	width: 900px !important;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+/* Conservation Page */
+.custom-alert {
+    background-color: #ff7e33; 
+    color: #b81702; 
+    padding: 20px; 
+    border-radius: 3px; 
+    border: 1px solid #f5c2a0;
+	font-size: 18px;
+	width: 500px;
+	margin: 0 auto;
+  }
+
+  .custom-alert .close {
+    color: #ffb950;
+    opacity: 1; 
+	font-size: 24px;
+  }
+
+
+/* Blog Page */
+.custom-card {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+	
+}
+
+.custom-card .card-body {
+	padding: 20px;
+}
+
+.custom-card .custom-button {
+    display: block; 
+    width: fit-content;
+    margin: 0 auto; 
+    margin-top: 20px;
+}
+
+.custom-card .custom-list li {
+    margin-bottom: 10px; 
+}
+
+.btn.high-contrast-btn {
+    background-color: #7a0103 !important; 
+    color: #FFFFFF !important; 
+    border: none !important; 
+}
+
+.btn.high-contrast-btn:hover, .btn.high-contrast-btn:focus {
+    background-color: #580002 !important; 
+    color: #FFFFFF !important;
+}
+
+
+/* Index Page- Carousel */
+.carousel-inner img {
+    height: 500px; 
+	object-fit: cover;
+}
+
+.carousel-caption h5 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Button Enhancement */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ec3f13;
+    padding: 10px; 
+    border-radius: 50%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 2;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #000; 
+}
+
+.carousel-indicators {
+    bottom: -50px; 
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+	background-color: #a50104; 
+}
+
+/* Card Customization for Smaller Size */
+.custom-container {
+    max-width: 960px; 
+    margin: auto;
+    padding: 20px;
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.carousel-inner img {
+    width: 100%; 
+    object-fit: cover; 
+}
+
+.carousel-caption h5 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+	display: inline-block;
+	max-width: 75%;
+	word-wrap: break-word;
+}
+
+
+
+/* Keyframes for spinning animation */
+@keyframes spinIn {
+    from {
+        transform: rotate(0deg) scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(360deg) scale(1);
+        opacity: 1;
+    }
+}
+
+.carousel-caption {
+    animation: spinIn 1s ease-out forwards;
+    opacity: 0; 
+}
+
+/* Heading, Paragraphs, and Links Styling for Clarity */
+.custom-container h1, .custom-container h2, .custom-container p {
+    margin-bottom: 15px; 
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .custom-container {
+        width: 95% !important;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 10px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    /* Conservation Page Adjustments */
+    .custom-alert {
+        width: 90%;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+	/* Blog Page Adjustments */
+    .custom-card {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .custom-card .card-body {
+        padding: 15px;
+    }
+
+    /* Carousel Adjustments */
+    .carousel-inner img {
+        height: auto;
+    }
+
+    .carousel-caption h5 {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+    }
+}
