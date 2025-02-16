@@ -22,10 +22,10 @@ p {
 }
 
 /* Navigation */
-.navbar, .navbar-brand, .nav-link, .nav-link.active:focus, .navbar-nav .nav-link.active:hover {
-    background-color: #7a0103 !important; 
-    border-color: #7a0103; 
-    color: #FFFFFF !important; 
+.navbar, .navbar-brand, .nav-link, .navbar-nav .nav-link.active:focus {
+    background-color: #7a0103 !important;
+    border-color: #7a0103;
+    color: #FFFFFF !important;
 }
 
 /* Default styles for nav-link */
@@ -49,10 +49,6 @@ p {
 
 /* Hover effect for active nav-link */
 .navbar .nav-link.active:hover,
-.navbar .nav-link.active:focus {
-    background-color: #580002 !important;
-    color: #FFFFFF !important;
-} /* Focus state for active link */
 .navbar .nav-link.active:focus {
     background-color: #580002 !important;
     color: #FFFFFF !important;
