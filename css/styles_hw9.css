@@ -103,8 +103,8 @@ p {
 
 /* Index Page - Carousel */
 .carousel-inner img {
-    width: 100%; 
-    height: 500px; /* Match the height of the other images */
+    width: 100% !important; 
+    height: 500px !important; /* Match the height of the other images */
     object-fit: cover; /* Ensures consistent cropping */
 }
 
