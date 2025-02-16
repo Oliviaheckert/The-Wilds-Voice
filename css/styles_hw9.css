@@ -16,12 +16,13 @@ body {
     margin: 0;
 }
 
+/* Typography */
 p {
     font-family: 'Merriweather', serif;
     font-size: 20px;
 }
 
- /* Navigation */
+/* Navigation */
 .navbar, .navbar-brand, .nav-link, .nav-link.active:focus, .navbar-nav .nav-link.active:hover {
     background-color: #7a0103 !important; 
     border-color: #7a0103; 
@@ -52,7 +53,9 @@ p {
 .navbar .nav-link.active:focus {
     background-color: #580002 !important;
     color: #FFFFFF !important;
-} /* Focus state for active link */
+} 
+
+/* Focus state for active link */
 .navbar .nav-link.active:focus {
     background-color: #580002 !important;
     color: #FFFFFF !important;
@@ -286,11 +289,5 @@ p {
     /* Adjust Font Sizes */
     p, h1, h2 {
         font-size: 16px; /* Adjust font sizes for readability */
-    }
-
-    /* Footer */
-    footer {
-        padding: 20px;
-        text-align: center;
     }
 }
