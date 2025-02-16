@@ -28,8 +28,13 @@ p {
 }
 
 .navbar, .navbar-brand, .nav-link, .nav-link.active:focus, .navbar-nav .nav-link.active:hover {
-    color: #FFFFFF !important; /* Set link color to white */
-    border-color: #7a0103; 
+    color: white !important; /* Makes text color white */
+    background-color: transparent; /* Removes the white box around the link */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa !important; /* Makes text color white when hovered */
+    background-color: #007bff; /* Sets a background color on hover (you can adjust this as needed) */
 }
 
 .navbar-toggler-icon {
