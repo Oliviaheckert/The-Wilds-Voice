@@ -45,6 +45,13 @@ p {
     color: #FFFFFF !important;
 }
 
+/* Apply hover effect even when link is active */
+.navbar .nav-link.active:hover,
+.navbar .nav-link.active:focus {
+    background-color: #580002 !important;
+    color: #FFFFFF !important;
+}
+
 /* General Container Styling */
 .custom-container {
     max-width: 960px; 
