@@ -147,7 +147,6 @@ p {
 }
 
 /* Carousel Caption Styling */
-/* Fully Reset Carousel Caption Styling */
 .carousel-item .carousel-caption {
     background: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent black background */
     padding: 10px 20px !important; /* Add some padding to create space around the text */
@@ -166,7 +165,7 @@ p {
 
 /* Ensuring No Background Box on Text */
 .carousel-item .carousel-caption h5 {
-    display: inline !important;
+    display: inline-block !important;
     background: none !important;
     padding: 0 !important;
     border: none !important;
