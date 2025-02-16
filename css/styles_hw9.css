@@ -127,10 +127,6 @@ p {
     z-index: 2;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: #000; 
-}
-
 .carousel-indicators {
     bottom: -50px; 
 }
