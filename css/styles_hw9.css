@@ -36,7 +36,7 @@ p {
 /* Hover state for nav links */
 .navbar-nav .nav-link:hover {
     color: white !important; /* Make text color white on hover */
-    background-color: #7a0103; /* Hover background */
+    background-color: #580002; /* Hover background */
 }
 
 /* Active link background - ensures active link has the same background as hover */
