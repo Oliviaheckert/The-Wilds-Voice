@@ -102,6 +102,12 @@ p {
 }
 
 /* Index Page - Carousel */
+/* Section background with soft opacity */
+.section-background {
+    background-color: rgba(0, 123, 255, 0.1); /* Soft blue background */
+    padding: 50px 0;
+}
+
 .carousel-inner img {
     width: 100% !important; 
     height: 500px !important; /* Match the height of the other images */
