@@ -28,19 +28,26 @@ p {
     color: white !important; /* Text color is white */
 }
 
+.navbar-nav .nav-link {
+    color: white !important; /* Ensure text is white by default */
+    background-color: #7a0103 !important;
+}
+
+/* Hover state for nav links */
 .navbar-nav .nav-link:hover {
     color: white !important; /* Make text color white on hover */
     background-color: #580002; /* Hover background */
 }
 
-.navbar .nav-link.active {
-    background-color: #7a0103 !important; /* Active link background */
+/* Active link background - ensures active link has the same background as hover */
+.navbar-nav .nav-link.active {
+    background-color: #580002 !important; /* Active link background */
     color: white !important;
 }
 
-.navbar-nav .nav-link {
-    color: white !important; /* Ensure text is white by default */
-    background-color: #7a0103 !important;
+/* Ensure the active link style appears in its default state */
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+    background-color: #580002 !important;
 }
 
 /* General Container Styling */
