@@ -147,7 +147,7 @@ p {
 }
 
 /* Carousel Caption Styling */
-.carousel-caption {
+.carousel-item .carousel-caption {
     background: none !important;
     padding: 0 !important;
     border: none !important;
@@ -162,7 +162,7 @@ p {
 }
 
 /* Ensuring No Background Box on Text */
-.carousel-caption h5 {
+.carousel-item .carousel-caption h5 {
     display: inline !important;
     background: none !important;
     padding: 0 !important;
