@@ -106,6 +106,7 @@ p {
     width: 100% !important; 
     height: 500px !important; /* Match the height of the other images */
     object-fit: cover; /* Ensures consistent cropping */
+    display: block;
 }
 
 /* Button Enhancement */
