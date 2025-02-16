@@ -185,9 +185,10 @@ p {
 .carousel-caption {
     animation: spinIn 1s ease-out forwards;
     opacity: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
-    padding: 10px;
-    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    display: inline-block; /* Ensures background fits closely */
+    padding: 5px 10px; /* Adjust padding for a tighter fit */
+    border-radius: 5px; /* Keeps rounded edges */
 }
 
 .carousel-inner img {
