@@ -26,7 +26,7 @@ p {
 
 .navbar, .navbar-brand, .nav-link, .nav-link.active:focus, .navbar-nav .nav-link.active:hover {
     color: white !important; /* Text color is white */
-    background-color: transparent; /* Remove background box around the links */
+    background-color: transparent !important; /* Remove background box around the links */
 }
 
 .navbar-nav .nav-link:hover {
