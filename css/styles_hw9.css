@@ -1,18 +1,21 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* Ensures consistent box model behavior */
+* {
+    box-sizing: border-box;
+}
+
 body { 
-	line-height: 1.6;
-	padding: 0;
+    line-height: 1.6;
+    padding: 0;
     margin: 0;
 }
 
 p {
-	font-family: 'Merriweather', serif;
-	font-size: 20px;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
 }
-
-
 
 /* Navigation */
 .navbar, .navbar-brand, .nav-link, .nav-link.active:focus, .navbar-nav .nav-link.active:hover {
@@ -22,29 +25,26 @@ p {
 }
 
 /* Hover State for Navigation Links */
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+.navbar .nav-link:hover, .navbar .nav-link:focus, .navbar-brand:hover, .navbar-brand:focus {
     background-color: #580002 !important; 
     color: #FFFFFF !important; 
 }
 
-
 /* About Page */
 .btn.btn-link {
     color: #7a0103 !important; 
-	font-weight: bold;
+    font-weight: bold;
 }
 
+/* General Container Styling */
 .custom-container {
-	width: 900px !important;
-	margin-top: 3rem;
-	margin-bottom: 3rem;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 8px;
-	padding: 20px;
-	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 960px; 
+    margin: 3rem auto;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
-
 
 /* Conservation Page */
 .custom-alert {
@@ -53,45 +53,43 @@ p {
     padding: 20px; 
     border-radius: 3px; 
     border: 1px solid #f5c2a0;
-	font-size: 18px;
-	width: 500px;
-	margin: 0 auto;
-  }
+    font-size: 18px;
+    width: 500px;
+    margin: 0 auto;
+}
 
-  .custom-alert .close {
+.custom-alert .close {
     color: #ffb950;
     opacity: 1; 
-	font-size: 24px;
-  }
-
+    font-size: 24px;
+}
 
 /* Blog Page */
 .custom-card {
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	margin: 15px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	border-top-left-radius: calc(.25rem - 1px);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
-	
 }
 
 .custom-card .card-body {
-	padding: 20px;
+    padding: 20px;
 }
 
 .custom-card .custom-button {
     display: block; 
     width: fit-content;
-    margin: 0 auto; 
-    margin-top: 20px;
+    margin: 20px auto 0; 
 }
 
 .custom-card .custom-list li {
     margin-bottom: 10px; 
 }
 
+/* High Contrast Button */
 .btn.high-contrast-btn {
     background-color: #7a0103 !important; 
     color: #FFFFFF !important; 
@@ -103,14 +101,12 @@ p {
     color: #FFFFFF !important;
 }
 
-
-/* Index Page- Carousel */
+/* Index Page - Carousel */
 .carousel-inner img {
     max-height: 500px; /* Keeps a max height but allows flexibility */
     width: 100%; 
     object-fit: cover;
 }
-
 
 /* Button Enhancement */
 .carousel-control-prev-icon,
@@ -130,18 +126,8 @@ p {
 
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-	background-color: #a50104; 
+    background-color: #a50104; 
 }
-
-/* Card Customization for Smaller Size */
-.custom-container {
-    max-width: 960px; 
-    margin: auto;
-    padding: 20px;
-    background-color: #fff; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
-
 
 /* Keyframes for spinning animation */
 @keyframes spinIn {
@@ -155,13 +141,15 @@ p {
     }
 }
 
+/* Carousel Caption Styling */
 .carousel-caption {
-    background: none !important; /* Remove Bootstrap's default full-width background */
-    padding: 0;
+    background: rgba(0, 0, 0, 0.3) !important; /* Light opacity */
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .carousel-caption h5 {
-    display: inline-block; /* Ensure the background only wraps the text */
+    display: inline-block; /* Ensures the background only wraps the text */
     background: rgba(0, 0, 0, 0.5); /* Dark overlay just around text */
     padding: 5px 10px;
     border-radius: 5px;
@@ -174,13 +162,8 @@ p {
     margin-bottom: 15px; 
 }
 
-
 /* Media Queries */
 @media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-
     .custom-container {
         width: 95% !important;
         margin-top: 1rem;
@@ -199,7 +182,7 @@ p {
         padding: 15px;
     }
 
-	/* Blog Page Adjustments */
+    /* Blog Page Adjustments */
     .custom-card {
         width: 95%;
         margin: 10px auto;
@@ -211,7 +194,7 @@ p {
 
     /* Carousel Adjustments */
     .carousel-inner img {
-        height: auto;
+        max-height: 300px; /* Adjust height for smaller screens */
     }
 
     .carousel-caption h5 {
@@ -224,12 +207,5 @@ p {
         width: 30px;
         height: 30px;
         background-size: contain;
-    }
-}
-
-/* Responsiveness */
-@media (max-width: 768px) {
-    .carousel-inner img {
-        max-height: 300px; /* Adjust height for smaller screens */
     }
 }
