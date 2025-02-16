@@ -29,14 +29,11 @@ p {
 }
 
 /* Hover State for Navigation Links */
-.navbar .nav-link:hover,
-.navbar .nav-link:focus,
-.navbar .nav-link.active:hover,
-.navbar .nav-link.active:focus,
-.navbar-brand:hover,
-.navbar-brand:focus {
-    background-color: #580002 !important; 
-    color: #FFFFFF !important; 
+/* Ensures the hover effect works for nav-link elements, even when they are active */
+.navbar .nav-link:not(.active):hover,
+.navbar .nav-link:not(.active):focus {
+    background-color: #580002 !important;
+    color: #FFFFFF !important;
 }
 
 /* Ensure active link has a distinct style but still works with hover */
