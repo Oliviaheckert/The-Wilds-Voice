@@ -69,6 +69,10 @@ p {
     color: #FFFFFF !important;
 }
 
+.navbar {
+    background-color: #580002 !important; /* Set navbar background color */
+}
+
 /* General Container Styling */
 .custom-container {
     max-width: 960px; 
