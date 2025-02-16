@@ -34,7 +34,7 @@ p {
 }
 
 .navbar .nav-link.active {
-    background-color: #580002 !important; /* Active link background */
+    background-color: #7a0103 !important; /* Active link background */
     color: white !important;
 }
 
