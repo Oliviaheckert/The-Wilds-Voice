@@ -39,6 +39,12 @@ p {
     color: #FFFFFF !important; 
 }
 
+/* Ensure active link has a distinct style but still works with hover */
+.navbar .nav-link.active {
+    background-color: #7a0103 !important; 
+    color: #FFFFFF !important;
+}
+
 /* General Container Styling */
 .custom-container {
     max-width: 960px; 
