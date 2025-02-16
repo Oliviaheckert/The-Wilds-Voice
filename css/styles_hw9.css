@@ -114,11 +114,6 @@ p {
 	object-fit: cover;
 }
 
-.carousel-caption h5 {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
-    border-radius: 5px;
-}
 
 /* Button Enhancement */
 .carousel-control-prev-icon,
@@ -159,16 +154,6 @@ p {
     object-fit: cover; 
 }
 
-.carousel-caption h5 {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
-    border-radius: 5px;
-	display: inline-block;
-	max-width: 75%;
-	word-wrap: break-word;
-}
-
-
 
 /* Keyframes for spinning animation */
 @keyframes spinIn {
@@ -182,18 +167,19 @@ p {
     }
 }
 
+.carousel-caption {
+    background: none !important; /* Remove Bootstrap's default full-width background */
+    padding: 0;
+}
+
 .carousel-caption h5 {
-    display: inline;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    display: inline-block; /* Ensure the background only wraps the text */
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay just around text */
     padding: 5px 10px;
     border-radius: 5px;
+    max-width: 75%;
+    word-wrap: break-word;
 }
-
-.carousel-inner img {
-    object-fit: cover;
-    max-height: 500px; /* Ensure images aren't stretched */
-}
-
 
 /* Heading, Paragraphs, and Links Styling for Clarity */
 .custom-container h1, .custom-container h2, .custom-container p {
