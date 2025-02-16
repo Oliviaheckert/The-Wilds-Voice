@@ -29,7 +29,12 @@ p {
 }
 
 /* Hover State for Navigation Links */
-.navbar .nav-link:hover, .navbar .nav-link:focus, .navbar-brand:hover, .navbar-brand:focus {
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active:hover,
+.navbar .nav-link.active:focus,
+.navbar-brand:hover,
+.navbar-brand:focus {
     background-color: #580002 !important; 
     color: #FFFFFF !important; 
 }
