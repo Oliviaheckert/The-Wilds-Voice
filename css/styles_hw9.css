@@ -110,8 +110,9 @@ p {
 
 /* Index Page- Carousel */
 .carousel-inner img {
-    height: 500px; 
-	object-fit: cover;
+    max-height: 500px; /* Keeps a max height but allows flexibility */
+    width: 100%; 
+    object-fit: cover;
 }
 
 
@@ -143,11 +144,6 @@ p {
     padding: 20px;
     background-color: #fff; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
-
-.carousel-inner img {
-    width: 100%; 
-    object-fit: cover; 
 }
 
 
@@ -232,5 +228,12 @@ p {
         width: 30px;
         height: 30px;
         background-size: contain;
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        max-height: 300px; /* Adjust height for smaller screens */
     }
 }
