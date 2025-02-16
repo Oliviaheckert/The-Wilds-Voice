@@ -161,6 +161,7 @@ p {
     max-width: 100%;
     text-align: center;
     border-radius: 5px; /* Optional: adds rounded corners to the box */
+    z-index: 10 !important; /* Ensures it stays above other elements */
 }
 
 /* Ensuring No Background Box on Text */
