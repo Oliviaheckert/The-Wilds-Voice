@@ -147,9 +147,10 @@ p {
 }
 
 /* Carousel Caption Styling */
+/* Fully Reset Carousel Caption Styling */
 .carousel-item .carousel-caption {
-    background: none !important;
-    padding: 0 !important;
+    background: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent black background */
+    padding: 10px 20px !important; /* Add some padding to create space around the text */
     border: none !important;
     box-shadow: none !important;
     position: absolute !important;
@@ -159,6 +160,7 @@ p {
     width: auto !important;
     max-width: 100%;
     text-align: center;
+    border-radius: 5px; /* Optional: adds rounded corners to the box */
 }
 
 /* Ensuring No Background Box on Text */
