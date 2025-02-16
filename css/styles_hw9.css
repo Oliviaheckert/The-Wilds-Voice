@@ -156,10 +156,11 @@ p {
 .carousel-caption h5 {
     display: inline-block; /* Ensures the background only wraps the text */
     background: none; 
-    padding: 5px 10px;
-    border-radius: 5px;
-    max-width: 75%;
-    word-wrap: break-word;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    max-width: 100%;
+    word-wrap: normal;
+    color: white; /* Ensure visibility */
 }
 
 /* Heading, Paragraphs, and Links Styling for Clarity */
