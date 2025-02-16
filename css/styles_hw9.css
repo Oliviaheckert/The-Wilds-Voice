@@ -105,8 +105,8 @@ p {
 .carousel-inner img {
     width: 100% !important; 
     height: 500px !important; /* Match the height of the other images */
-    object-fit: cover; /* Ensures consistent cropping */
-    display: block;
+    object-fit: cover !important; /* Ensures consistent cropping */
+    display: block !important;
 }
 
 /* Button Enhancement */
