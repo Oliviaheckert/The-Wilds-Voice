@@ -155,7 +155,7 @@ p {
 
 .carousel-caption h5 {
     display: inline-block; /* Ensures the background only wraps the text */
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay just around text */
+    background: none; 
     padding: 5px 10px;
     border-radius: 5px;
     max-width: 75%;
