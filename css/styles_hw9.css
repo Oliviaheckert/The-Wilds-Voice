@@ -29,7 +29,6 @@ p {
 }
 
 .navbar-nav .nav-link {
-    color: white !important; /* Ensure text is white by default */
     background-color: #7a0103 !important;
 }
 
@@ -42,7 +41,12 @@ p {
 /* Active link background - ensures active link has the same background as hover */
 .navbar-nav .nav-link.active {
     background-color: #7a0103 !important; /* Active link background */
-    color: white !important;
+}
+
+/* Focused links */
+.navbar-nav .nav-link:focus {
+    background-color: #580002 !important; /* Focus background */
+    color: white !important; /* Focused text color */
 }
 
 /* General Container Styling */
