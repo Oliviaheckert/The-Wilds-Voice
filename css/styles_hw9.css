@@ -148,20 +148,31 @@ p {
 
 /* Carousel Caption Styling */
 .carousel-caption {
-    background: transparent !important;
+    background: none !important;
     padding: 0 !important;
     border: none !important;
     box-shadow: none !important;
+    position: absolute !important;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px; /* Adjust this if necessary */
+    width: auto !important;
+    max-width: 100%;
+    text-align: center;
 }
 
+/* Ensuring No Background Box on Text */
 .carousel-caption h5 {
-    display: inline !important; /* Avoid block-level spacing issues */
-    background: transparent !important; 
+    display: inline !important;
+    background: none !important;
     padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
     border-radius: 0 !important;
     max-width: 100%;
-    color: white; /* Ensure visibility */
-    text-shadow: none;
+    color: white !important;
+    text-shadow: none !important;
+    font-weight: bold;
 }
 
 /* Heading, Paragraphs, and Links Styling for Clarity */
