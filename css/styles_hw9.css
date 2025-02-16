@@ -41,7 +41,7 @@ p {
 
 /* Active link background - ensures active link has the same background as hover */
 .navbar-nav .nav-link.active {
-    background-color: #580002 !important; /* Active link background */
+    background-color: #7a0103 !important; /* Active link background */
     color: white !important;
 }
 
