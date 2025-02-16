@@ -38,8 +38,8 @@ p {
 
 /* Default styles for nav-link */
 .navbar .nav-link {
-    background-color: #fff !important;
-    color: #7a0103 !important; /* Set text color for nav links */
+    background-color: transparent !important;
+    color: #FFFFFF !important; /* Set text color for nav links */
     padding: 10px 15px; /* Ensure padding around links */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
