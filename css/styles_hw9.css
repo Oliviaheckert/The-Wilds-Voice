@@ -34,12 +34,6 @@ p {
     color: #FFFFFF !important; 
 }
 
-/* About Page */
-.btn.btn-link {
-    color: #7a0103 !important; 
-    font-weight: bold;
-}
-
 /* General Container Styling */
 .custom-container {
     max-width: 960px; 
@@ -180,19 +174,43 @@ p {
     font-weight: bold;
 }
 
-
 /* Heading, Paragraphs, and Links Styling for Clarity */
 .custom-container h1, .custom-container h2, .custom-container p {
     margin-bottom: 15px; 
 }
 
-/* Media Queries */
+/* Mobile navigation improvements */
+.navbar-toggler-icon {
+    background-color: #fff; /* White toggle icon for visibility */
+}
+
 @media (max-width: 768px) {
+    .navbar-nav {
+        margin-top: 10px;
+    }
+
+    /* Ensure the navbar links don't overflow */
+    .navbar-collapse {
+        display: block !important; 
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        border-color: #7a0103; /* Adjusted color */
+    }
+
+    /* Custom Container for Mobile */
     .custom-container {
-        width: 95% !important;
+        width: 95%;
         margin-top: 1rem;
         margin-bottom: 1rem;
         padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     p {
@@ -218,7 +236,8 @@ p {
 
     /* Carousel Adjustments */
     .carousel-inner img {
-        max-height: 300px; /* Adjust height for smaller screens */
+        height: 250px; /* Adjust height for mobile */
+        object-fit: cover;
     }
 
     .carousel-caption h5 {
@@ -231,5 +250,23 @@ p {
         width: 30px;
         height: 30px;
         background-size: contain;
+    }
+
+    /* Button Styling */
+    .btn {
+        width: 100%; /* Make buttons expand to full width */
+        padding: 12px; /* Increase padding for easier tapping */
+        font-size: 18px; /* Increase font size for readability */
+    }
+
+    /* Adjust Font Sizes */
+    p, h1, h2 {
+        font-size: 16px; /* Adjust font sizes for readability */
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px;
+        text-align: center;
     }
 }
