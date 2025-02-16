@@ -148,19 +148,20 @@ p {
 
 /* Carousel Caption Styling */
 .carousel-caption {
-    background: none !important;
+    background: transparent !important;
     padding: 0 !important;
     border: none !important;
+    box-shadow: none !important;
 }
 
 .carousel-caption h5 {
-    display: inline-block; /* Ensures the background only wraps the text */
-    background: none; 
+    display: inline !important; /* Avoid block-level spacing issues */
+    background: transparent !important; 
     padding: 0 !important;
     border-radius: 0 !important;
     max-width: 100%;
-    word-wrap: normal;
     color: white; /* Ensure visibility */
+    text-shadow: none;
 }
 
 /* Heading, Paragraphs, and Links Styling for Clarity */
