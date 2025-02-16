@@ -103,9 +103,9 @@ p {
 
 /* Index Page - Carousel */
 .carousel-inner img {
-    max-height: 500px; /* Keeps a max height but allows flexibility */
     width: 100%; 
-    object-fit: cover;
+    height: 500px; /* Match the height of the other images */
+    object-fit: cover; /* Ensures consistent cropping */
 }
 
 /* Button Enhancement */
