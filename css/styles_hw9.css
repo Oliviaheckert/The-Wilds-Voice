@@ -26,33 +26,21 @@ p {
 
 .navbar, .navbar-brand, .nav-link, .nav-link.active:focus, .navbar-nav .nav-link.active:hover {
     color: white !important; /* Text color is white */
-    background-color: #7a0103 !important; /* Remove background box around the links */
 }
 
 .navbar-nav .nav-link:hover {
-    color: #fff !important; /* Make text color white on hover */
+    color: white !important; /* Make text color white on hover */
     background-color: #580002; /* Hover background */
 }
 
 .navbar .nav-link.active {
     background-color: #580002 !important; /* Active link background */
-    color: #fff !important;
+    color: white !important;
 }
 
 .navbar-nav .nav-link {
     color: white !important; /* Ensure text is white by default */
-    padding: 10px 15px;
     background-color: #7a0103 !important;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.navbar-nav .nav-link:not(.active):hover {
-    background-color: #580002 !important; /* Hover effect for inactive links */
-    color: #fff !important; /* Keep text color white on hover */
-}
-
-.navbar-toggler-icon {
-    background-color: #fff; /* White toggle icon for visibility */
 }
 
 /* General Container Styling */
