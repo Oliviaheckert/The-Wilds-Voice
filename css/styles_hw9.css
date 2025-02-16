@@ -28,26 +28,38 @@ p {
     color: #FFFFFF !important; 
 }
 
-/* Hover State for Navigation Links */
-/* Ensures the hover effect works for nav-link elements, even when they are active */
-.navbar .nav-link:not(.active):hover,
-.navbar .nav-link:not(.active):focus {
+/* Default styles for nav-link */
+.navbar .nav-link {
+    background-color: transparent !important;
+    color: #7a0103 !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover state for non-active nav-link */
+.navbar .nav-link:not(.active):hover {
     background-color: #580002 !important;
     color: #FFFFFF !important;
 }
 
-/* Ensure active link has a distinct style but still works with hover */
+/* Active state for nav-link */
 .navbar .nav-link.active {
-    background-color: #7a0103 !important; 
+    background-color: #7a0103 !important;
     color: #FFFFFF !important;
 }
 
-/* Apply hover effect even when link is active */
+/* Hover effect for active nav-link */
 .navbar .nav-link.active:hover,
 .navbar .nav-link.active:focus {
     background-color: #580002 !important;
     color: #FFFFFF !important;
 }
+
+/* Focus state for active link */
+.navbar .nav-link.active:focus {
+    background-color: #580002 !important;
+    color: #FFFFFF !important;
+}
+
 
 /* General Container Styling */
 .custom-container {
