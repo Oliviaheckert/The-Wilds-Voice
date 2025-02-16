@@ -154,7 +154,6 @@ p {
 .carousel-item .carousel-caption {
     background: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent black background */
     padding: 10px 20px !important; /* Add some padding to create space around the text */
-    border: 2px solid #fff !important;
     box-shadow: none !important;
     position: absolute !important;
     left: 50%;
