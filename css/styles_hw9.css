@@ -37,17 +37,26 @@ p {
 
 /* Hover state for non-active nav-link */
 .navbar .nav-link:not(.active):hover {
-    background-color: #580002;
-    color: #FFFFFF;
+    background-color: #580002 !important;
+    color: #FFFFFF !important;
+}
+
+/* Active state for nav-link */
+.navbar .nav-link.active {
+    background-color: #7a0103 !important;
+    color: #FFFFFF !important;
 }
 
 /* Hover effect for active nav-link */
 .navbar .nav-link.active:hover,
 .navbar .nav-link.active:focus {
-    background-color: #580002;
-    color: #FFFFFF;
+    background-color: #580002 !important;
+    color: #FFFFFF !important;
+} /* Focus state for active link */
+.navbar .nav-link.active:focus {
+    background-color: #580002 !important;
+    color: #FFFFFF !important;
 }
-
 
 
 /* General Container Styling */
