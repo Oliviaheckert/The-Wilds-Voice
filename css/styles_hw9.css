@@ -157,7 +157,7 @@ p {
     transform: translateX(-50%);
     bottom: 10px; /* Adjust this if necessary */
     width: auto !important;
-    max-width: 100%;
+    max-width: 80%;
     text-align: center;
     border-radius: 5px; /* Optional: adds rounded corners to the box */
     z-index: 10 !important; /* Ensures it stays above other elements */
