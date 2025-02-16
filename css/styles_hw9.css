@@ -20,6 +20,10 @@ p {
 }
 
 /* Navigation */
+.navbar {
+    background-color: #7a0103 !important;
+}
+
 .navbar, .navbar-brand, .nav-link, .nav-link.active:focus, .navbar-nav .nav-link.active:hover {
     color: white !important; /* Text color is white */
     background-color: #7a0103 !important; /* Remove background box around the links */
