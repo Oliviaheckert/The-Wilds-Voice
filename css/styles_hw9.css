@@ -45,11 +45,6 @@ p {
     color: white !important;
 }
 
-/* Ensure the active link style appears in its default state */
-.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
-    background-color: #580002 !important;
-}
-
 /* General Container Styling */
 .custom-container {
     max-width: 960px; 
