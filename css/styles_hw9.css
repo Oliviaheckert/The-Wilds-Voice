@@ -42,7 +42,7 @@ p {
 .navbar-nav .nav-link {
     color: white !important; /* Ensure text is white by default */
     padding: 10px 15px;
-    background-color: transparent !important;
+    background-color: #7a0103 !important;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
