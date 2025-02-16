@@ -148,8 +148,8 @@ p {
 
 /* Carousel Caption Styling */
 .carousel-caption {
-    background: rgba(0, 0, 0, 0.3) !important; /* Light opacity */
-    padding: 10px;
+    background: none;
+    padding: 0;
     border-radius: 8px;
 }
 
