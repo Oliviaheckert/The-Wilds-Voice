@@ -203,12 +203,15 @@ p {
 /* Mobile navigation improvements */
 @media (max-width: 768px) {
     .navbar-nav {
-        margin-top: 10px;
+        display: flex; /* Ensure the navbar items are displayed in a row */
+        justify-content: center; /* Center align the navbar items */
+        flex-direction: column; /* Stack the items vertically */
     }
 
     /* Ensure the navbar links don't overflow */
     .navbar-collapse {
         display: block !important; 
+        visibility: visible !important;
     }
 
     .navbar-nav .nav-link {
